@@ -36,21 +36,60 @@ const db = getFirestore();
 // .catch(console.error)
 
 
-const NewProducts = {
-    name: 'Kong',
-    serialnumber: 359067,
-    datestock: 2015,
-    price: '$24.99',
-}
+// const NewProducts = {
+//     name: 'Kong',
+//     serialnumber: 359067,
+//     datestock: 2015,
+//     price: '$24.99',
+// }
 
-db.collection('Product').add(NewProducts)
+// // Create a document inside a collection
+// db.collection('Product').add(NewProducts)
 
-.then(doc => console.log('Product created', doc.id))
-.catch(console.error)
+// .then(doc => console.log('Product created', doc.id))
+// .catch(console.error)
 
+//get all games
+// db.collection('Customer').get()
+
+//reshape the collection
 // .then(collection => {
 //     collection.docs.forEach(doc => {
 //         console.log(doc.id, doc.data())
 //     })
 // })
 // .catch(console.error)
+
+//4. list all Customers
+// db.collection('Customer').get()
+//     .then(collection => {
+//         collection.docs.forEach(doc => {
+//             console.log(doc.id, doc.data())
+//         })
+
+//     })
+//     .catch(console.error);
+
+// //For Pets
+//     db.collection('Pets').get()
+//     .then(collection => {
+//         collection.docs.forEach(doc => {
+//             console.log(doc.id, doc.data())
+//         })
+
+//     })
+//     .catch(console.error);
+
+
+// //For Toys
+//     db.collection('Product').get()
+//     .then(collection => {
+//         collection.docs.forEach(doc => {
+//             console.log(doc.id, doc.data())
+//         })
+
+//     })
+//     .catch(console.error);
+
+db.collection("Customer")
+.update({})
